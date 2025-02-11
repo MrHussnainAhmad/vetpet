@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/vetpet/static/css/main.00a58b4a.css",
+    "main.js": "/vetpet/static/js/main.c236e902.js",
+    "static/media/pet-care.jpg": "/vetpet/static/media/pet-care.d38fe2a9db188e1a3812.jpg",
+    "static/media/bg.jpg": "/vetpet/static/media/bg.9069c927cad7e77716fe.jpg",
+    "static/media/logo512.png": "/vetpet/static/media/logo512.f7f956dfdc5ca01aa94c.png",
+    "static/media/instagram.svg": "/vetpet/static/media/instagram.e848687c5541975cc5d4cbf265d5c608.svg",
+    "static/media/whatsapp.svg": "/vetpet/static/media/whatsapp.9fd95ccb127675a5e2d2fc5a4d741905.svg",
+    "static/media/facebook.svg": "/vetpet/static/media/facebook.77e51a1af8c512cfba1e1e0fc98f81c2.svg",
+    "index.html": "/vetpet/index.html",
+    "main.00a58b4a.css.map": "/vetpet/static/css/main.00a58b4a.css.map",
+    "main.c236e902.js.map": "/vetpet/static/js/main.c236e902.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00a58b4a.css",
+    "static/js/main.c236e902.js"
+  ]
+}
