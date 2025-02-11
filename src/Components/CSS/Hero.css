@@ -1,0 +1,38 @@
+/* components/Hero/Hero.css */
+.hero {
+  padding: 8rem 6% 4rem;
+  background: 
+              url('../assets/bg.jpg') center/cover;
+  color: white;
+  text-align: center;
+  animation: fadeInUp 0.8s ease;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p {
+  font-size: 1.4rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  opacity: 0.9;
+}
+
+.hero::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--accent);
+  margin: 2rem auto;
+  border-radius: 2px;
+}
+.cta-buttons1 {
+  display: flex;
+  gap: 2.2rem;
+  margin-top: 2.5rem;
+  justify-content: center;
+}

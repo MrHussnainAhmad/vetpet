@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+:root {
+  --light: #f9f9f9;
+  --text-color: #222;
+  --gradient-bg: linear-gradient(135deg, #ff7e5f, #feb47b);
+  --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  --glass: rgba(255, 255, 255, 0.1);
+  --transition: 0.4s ease-in-out;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 3rem;
+  background: var(--dark);
+  color: var(--light);
+  padding: 5rem 8%;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glassmorphism effect */
+.cta::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: var(--gradient-bg);
+  border-radius: 50%;
+  opacity: 0.2;
+  filter: blur(80px);
+  top: -50px;
+  left: -50px;
+}
+span{
+    font-size: bold;
+    color: crimson;
+}
+.cta-content {
+  flex: 1;
+  max-width: 600px;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--light);
+  margin-bottom: 1.2rem;
+  background: var(--gradient-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  color: var(--light);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 22px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  width: 190px;
+  transition: all var(--transition);
+  border: none;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+/* Button Hover Effects */
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left var(--transition);
+}
+
+.btn:hover::before {
+  left: 0;
+}
+
+.appointment {
+  background: var(--primary);
+  color: #fff;
+}
+
+.appointment:hover {
+  background: #ff6700;
+}
+
+.urgent {
+  background: var(--secondary);
+  color: #fff;
+}
+
+.urgent:hover {
+  background: #cc2200;
+}
+
+/* Image Section */
+.cta-image {
+  flex: 1;
+  position: relative;
+  z-index: 2;
+  float: right;
+}
+
+.cta-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: var(--box-shadow);
+  transition: transform var(--transition);
+}
+
+.cta-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .cta {
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 5%;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .cta-image img {
+    max-width: 100%;
+  }
+}

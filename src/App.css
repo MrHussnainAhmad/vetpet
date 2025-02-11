@@ -1,0 +1,17 @@
+:root {
+  --primary: #1a3c40;
+  --secondary: #14525c;
+  --dark: #2b2b2b;
+}
+@media (max-width: 426px) {
+  /* Hide scrollbar but allow scrolling */
+  body {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
+  }
+
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+}

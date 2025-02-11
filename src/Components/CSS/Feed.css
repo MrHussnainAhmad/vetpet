@@ -1,0 +1,50 @@
+/* Feed Component Styles */
+.feed-construction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #f7f7f7, #e0e0e0);
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.feed-construction h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #d9534f;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feed-construction p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feed-construction h2 {
+    font-size: 1.8rem;
+  }
+
+  .feed-construction p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feed-construction h2 {
+    font-size: 1.5rem;
+  }
+
+  .feed-construction p {
+    font-size: 0.9rem;
+  }
+}
